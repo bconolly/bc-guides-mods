@@ -12,4 +12,8 @@ Install:
 /plugin install sidegigs-tracker@bc-guides-mods
 ```
 
+## About BC Guides
+
+These mods come from BC Guides, practical guides for high-performing teams. Get the guides on Payhip: [Beyond vibe coding](https://payhip.com/b/DglMp).
+
 Licence: MIT.
