@@ -58,10 +58,10 @@ test('the pane shows both sections from the folder and the artifact list', async
     return { value: [{ name: 'skip.txt', kind: 'file', size: 1, mtimeMs: 0, isLink: false }] }
   })
   on('mcp.call', () => ({ value: { content: [{ type: 'text', text: WRAPPED }], isError: false } }))
-  on('clock.every', () => ({ value: () => {} }))
+  on('clock.every', () => ({ value: undefined }))
 
   await $.session.start({ cwd: '/', surface: 'desktop', isInteractive: true })
-  await $.command.run({ command: 'tracker', args: '' })
+  for (let i = 0; i < 50; i++) await Promise.resolve()
 
   for (const surface of ['terminal', 'desktop', 'mobile', 'vscode'] as const) {
     const ui = await $.ui.mount({ ...PANE, surface })

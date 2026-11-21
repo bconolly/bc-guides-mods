@@ -1,11 +1,19 @@
 {
   "name": "bc-guides-mods",
-  "owner": { "name": "BC Guides" },
+  "owner": {
+    "name": "BC Guides"
+  },
   "plugins": [
     {
       "name": "tracker",
       "source": "./mods/tracker",
-      "description": "Pane listing Sidegigs project files and published artifacts"
+      "description": "Pane listing Sidegigs project files and published artifacts",
+      "author": {
+        "name": "BC Guides"
+      },
+      "category": "productivity",
+      "version": "0.1.0"
     }
-  ]
+  ],
+  "description": "Helpful mods for Claude from BC Guides."
 }

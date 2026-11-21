@@ -1,1 +1,18 @@
-{ "name": "tracker", "version": "0.1.0", "description": "Pane listing Sidegigs project files and published artifacts", "license": "MIT", "types": "./types/index.d.ts" }
+{
+  "name": "tracker",
+  "version": "0.1.0",
+  "description": "Pane listing Sidegigs project files and published artifacts",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "BC Guides"
+  },
+  "homepage": "https://github.com/bconolly/bc-guides-mods",
+  "repository": "https://github.com/bconolly/bc-guides-mods",
+  "keywords": [
+    "tracker",
+    "files",
+    "artifacts"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}
