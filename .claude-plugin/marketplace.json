@@ -1,0 +1,11 @@
+{
+  "name": "bc-guides-mods",
+  "owner": { "name": "BC Guides" },
+  "plugins": [
+    {
+      "name": "sidegigs-tracker",
+      "source": "./mods/sidegigs-tracker",
+      "description": "Pane listing Sidegigs project files and published artifacts"
+    }
+  ]
+}
