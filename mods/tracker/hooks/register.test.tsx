@@ -3,11 +3,11 @@ import { expect, test } from 'claude-code/testing'
 import { formatSize, formatWhen, groupByFolder, parseArtifacts } from './register'
 
 const PANE = {
-  plugin: 'sidegigs-tracker',
+  plugin: 'tracker',
   component: 'Pane',
-  requestId: 'sidegigs-tracker',
+  requestId: 'tracker',
   props: {
-    title: 'Sidegigs tracker',
+    title: 'Tracker',
     isFocused: false,
     bodyColumns: 60,
     placement: 'dock',

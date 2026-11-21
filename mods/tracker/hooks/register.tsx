@@ -3,8 +3,8 @@ import type { EngineInterface, Register } from 'claude-code'
 
 import type { ArtifactRow, FileRow } from '../types'
 
-const PANE = 'sidegigs-tracker'
-const TITLE = 'Sidegigs tracker'
+const PANE = 'tracker'
+const TITLE = 'Tracker'
 const ROOT = '/mnt/project-files'
 const SKIP = new Set(['source', 'node_modules', 'uploads', 'fonts', 'fontshim'])
 const MAX_DEPTH = 6
@@ -25,10 +25,10 @@ export const LOGO_SVG =
   '</svg>'
 
 
-const files = atom({ plugin: 'sidegigs-tracker', key: 'files' } as const, [] as FileRow[], { shape: 'files-1' })
-const artifacts = atom({ plugin: 'sidegigs-tracker', key: 'artifacts' } as const, [] as ArtifactRow[], { shape: 'artifacts-1' })
-const checkedAt = atom({ plugin: 'sidegigs-tracker', key: 'checkedAt' } as const, 0, { shape: 'checked-1' })
-const openFolders = atom({ plugin: 'sidegigs-tracker', key: 'openFolders' } as const, [] as string[], { shape: 'open-1' })
+const files = atom({ plugin: 'tracker', key: 'files' } as const, [] as FileRow[], { shape: 'files-1' })
+const artifacts = atom({ plugin: 'tracker', key: 'artifacts' } as const, [] as ArtifactRow[], { shape: 'artifacts-1' })
+const checkedAt = atom({ plugin: 'tracker', key: 'checkedAt' } as const, 0, { shape: 'checked-1' })
+const openFolders = atom({ plugin: 'tracker', key: 'openFolders' } as const, [] as string[], { shape: 'open-1' })
 
 export const formatSize = (bytes: number): string => {
   if (bytes < 1024) return `${bytes} B`

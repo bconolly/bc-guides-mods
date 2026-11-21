@@ -3,7 +3,7 @@ export type ArtifactRow = { title: string; url: string; updatedAt: string }
 
 declare module 'claude-code' {
   interface PluginState {
-    'sidegigs-tracker': {
+    'tracker': {
       files: Shaped<FileRow[]>
       artifacts: Shaped<ArtifactRow[]>
       checkedAt: Shaped<number>
