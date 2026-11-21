@@ -128,7 +128,7 @@ export const register: Register = on => {
     const ran = await next(e)
     if (/^(Write|Artifact|Edit|Bash|mcp__remote-devices__device_commit_files)$/.test(e.tool)) void refresh($)
     return ran
-  })
+  }).catch(($, e, next) => next(e))
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
     const ui = $.ui.resolve(e)
